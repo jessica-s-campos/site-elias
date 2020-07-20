@@ -1,0 +1,287 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav a{
+  text-decoration:none;
+  font-family: 'Lekton';
+  font-weight: 400; 
+  color: whitesmoke;
+}
+
+nav a:active, nav a:hover{
+  text-shadow: 0px 0px 15px rgba(255,255,255,.6);
+}
+
+h1{
+  font-family: 'Lekton';
+}
+
+.perfil{
+  background: url(../img/fundo.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+.perfil .overlay{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 80px 0;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.perfil .texto{
+  font-family: 'Lekton';
+  font-size: 1.8rem;
+  padding: 2.8rem 1rem 5rem 1rem;
+}
+
+.perfil .contato{     
+  margin-top: 5rem;
+  margin-bottom: 2rem;  
+
+  display: flex;
+  
+}
+
+.perfil .contato a i {
+  color: whitesmoke;
+  font-size: 3.5rem;
+}
+
+.contato-item{ 
+  transition: all 1s;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
+}
+
+.contato-item:active, .contato-item:hover{
+  transform: scale(1.5);
+  text-shadow: 0px 0px 15px rgba(255,255,255,.6);
+}
+
+.titulo{
+  font-family: 'Lekton';
+}
+    
+.sobre,.depoimentos{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1.8rem 1rem 1.8rem 1rem;
+}  
+
+.sobre .texto p{
+  font-family: 'Abel';  
+}
+
+.cabecalho-1{
+  display: flex;    
+  justify-content: space-evenly;
+}
+
+.cabecalho-1 div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabecalho-1 div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicos h3{
+  font-family: 'Lekton';
+  font-weight: 400 ;
+  font-size: 1.5rem;
+}
+
+.servicos h4{  
+  font-family: 'Lekton';
+  margin-top: 2rem;
+}
+
+.servicos p{
+  font-family: 'Roboto Condensed';
+}
+
+.depoimentos span{
+  font-family: 'Lekton';
+}
+
+.depoimentos p {
+  font-family: 'Abel';
+}
+
+.demais-servicos{  
+  margin: 1rem;
+  width: inherit;
+}
+
+.demais-servicos .subtitulo{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.demais-servicos .overlay div:nth-child(1) h3{
+  margin-top: 1.5rem;
+}
+
+
+body {
+  background-color: whitesmoke;  
+  display: flex;
+  flex-direction: column; 
+}
+
+.perfil .button{
+  font-family: 'Abel';
+
+  border: whitesmoke solid 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 10rem;
+  height: 3rem;
+  color: whitesmoke;
+
+  transition: 0.5s;
+}
+
+.perfil .button:active, .perfil .button:hover{
+  box-shadow: 0px 0px 15px rgba(255,255,255,.6);
+  text-shadow: 0px 0px 15px rgba(255,255,255,.6);
+}
+
+
+.servicos{
+  background: url(../img/servicos.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+
+}
+
+.servicos .overlay{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 80px 0;
+  background-attachment: fixed;
+}
+
+.servicos .titulo{
+  text-align: center;
+}
+
+.servicos .itens{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4rem;
+}    
+
+.depoimentos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+.item-depoimento{
+  margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  
+  .perfil .texto{
+    font-family: 'Lekton';
+    font-size: 1.2rem;
+    padding: 2.8rem 1rem 5rem 1rem;
+  }
+
+  .perfil .contato a i {
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+  
+
+}
+
+@media screen and (min-width: 601px) and  (max-width: 800px) {
+  .perfil .contato a i {
+    color: whitesmoke;
+    font-size: 2.8rem;
+  }
+  
+}
+
+@media screen and (min-width:1024px){
+
+  .fundo-typing{
+    padding: 2.8rem 1rem 5rem 1rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+  }
+  
+  .perfil .texto{
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    padding: 0;
+    margin-bottom: 3rem;
+    font-family: 'Lekton';
+    font-size: 1.8rem;
+    
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+
+  .typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal,
+      typing 4s steps(40) 1s normal both;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 66rem;
+    }
+  }
+  
+  @keyframes blinkCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+}
+
