@@ -76,12 +76,13 @@ $.post(url,dados,(response)=>{
   )
 
 }).catch((err) => {
+  console.log('err :',err)
   Swal.fire(
     '<span style="font-size:1.5rem">Nos desculpe! :( ' +'</br>'+ 
     'Houve um erro ao enviar a sua mensagem!</span>',
     '<span style="font-size:1rem"></br>Entre em contato comigo pelas minhas redes sociais ou pelo meu whatsapp!'+'</br>'+
     '</br>Você também pode enviar um e-mail para <span style="color:orangered">falecomigo@eliascosta.com.br</span>'+'</br>'+
-    '</br>Vamos corrigir esse problema e você poderá tentar novamente mais tarde!</span>',
+    '</br>Tente novamente mais tarde!</span>',
     'error'
   )
 
