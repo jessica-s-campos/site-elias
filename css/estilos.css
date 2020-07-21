@@ -23,6 +23,12 @@ h1{
 .perfil{
   background: url(../img/fundo.webp);
   background-size: cover;
+
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -175,6 +181,12 @@ body {
 .servicos{
   background: url(../img/servicos.webp);
   background-size: cover;
+
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -262,8 +274,17 @@ body {
   
 
   .typing-animation {
+   
     animation: blinkCursor 500ms steps(40) infinite normal,
       typing 4s steps(40) 1s normal both;
+    -webkit-animation:blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 1s normal both;
+    -moz-animation:blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 1s normal both;
+    -o-animation:blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 1s normal both;
+    -ms-animation:blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 1s normal both;
   }
   
   @keyframes typing {
