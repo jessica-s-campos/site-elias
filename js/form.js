@@ -67,8 +67,7 @@ function sendEmail(){
   dados.subject = `${dados.name.toUpperCase()} ENVIOU MENSAGEM `;
 
 $.post(url,dados,(response)=>{
-  console.log('response:',response)
-
+  
   Swal.fire(
     'Mensagem enviada!',
     'Em breve você será respondido.',

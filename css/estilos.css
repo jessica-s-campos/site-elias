@@ -126,7 +126,7 @@ h1{
 }
 
 .servicos p{
-  font-family: 'Roboto Condensed';
+  font-family: 'Abel';
 }
 
 .depoimentos span{
@@ -213,7 +213,7 @@ body {
 }    
 
 .depoimentos{
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }  
