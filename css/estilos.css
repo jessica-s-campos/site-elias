@@ -149,6 +149,10 @@ h1{
   margin-bottom: 2rem;
 }
 
+.demais-servicos div h3::before{
+  content : '\203A \00a0'
+}
+
 .demais-servicos .overlay div:nth-child(1) h3{
   margin-top: 1.5rem;
 }
