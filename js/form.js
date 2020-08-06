@@ -25,10 +25,7 @@ function AbreFormularioEnvioMensagem(){
       })
 }
 
-
-
-$(document).ready(()=>{
-  
+document.addEventListener("DOMContentLoaded", function(event) {
   OnScroll();
 
 });
@@ -40,15 +37,14 @@ function OnScroll(){
  
   if(window.innerWidth > 991){
     if(window.pageYOffset == 0){   
-      header.classList.remove('bg-dark');
       header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     }
   
     else if(window.pageYOffset > 407){  
-      header.classList.add('bg-dark');
+      header.style.backgroundColor = 'black';
     }
   }else{
-    header.classList.add('bg-dark');
+    //header.style.backgroundColor = 'black';
   }
   
 }
@@ -58,11 +54,11 @@ function sendEmail(){
 
   let dados = {}; 
   dados.user = email_fale_comigo;
-  dados.from = $('#email').val();
+  dados.from = document.getElementById('email').value;
   dados.to = email_fale_comigo;
   
-  dados.text = $('#mensagem').val();
-  dados.name = $('#nome').val();
+  dados.text = document.getElementById('mensagem').value;
+  dados.name = document.getElementById('nome').value;
 
   dados.subject = `${dados.name.toUpperCase()} ENVIOU MENSAGEM `;
 
