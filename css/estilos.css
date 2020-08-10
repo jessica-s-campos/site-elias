@@ -36,8 +36,8 @@
 
 #menu-hamburguer:checked ~ label .menu{
   border-radius: 0;
-    height: 40vh;    
-    width: 25vw;
+    height: 35vh;    
+    width: 35vw;
 }
 
 #menu-hamburguer:checked ~ label .hamburguer{
@@ -87,7 +87,7 @@
 .menu-opcoes{
   position: fixed;
   top:15vh;
-  left:15vh;
+  left:8vh;
   
   list-style: none;
   opacity: 0;
@@ -348,27 +348,6 @@ body {
 
 
 @media screen and (max-width: 600px) {
-
-  #menu-hamburguer:checked ~ label .menu{
-    border-radius: 0;
-    height: 60vh;   
-    width: 20vw;
-  }
-
-  .menu-opcoes{
-    position: fixed;
-    top:28vh;
-    left:15vh;  
-    list-style: none;
-    opacity: 0;
-    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);    
-  }
-  
-
-}
-
-
-@media screen and (max-width: 600px) {
   
   .perfil .texto{
     font-family: 'Oswald';
@@ -381,46 +360,26 @@ body {
     font-size: 2rem;
   }
 
-  #menu-hamburguer:checked ~ label .menu{
-    border-radius: 0;
-    height: 60vh;   
-    width: 20vw;
-  }
-
-  .menu-opcoes{
-    position: fixed;
-    top:28vh;
-    left:15vh;  
-    list-style: none;
-    opacity: 0;
-    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);    
-  }
-  
 
 }
 
-@media screen and (min-width: 601px) and  (max-width: 800px) {
-  .perfil .contato a i {
-    color: whitesmoke;
-    font-size: 2.8rem;
-  }
-  
-  #menu-hamburguer:checked ~ label .menu{
-    border-radius: 0;
-    height: 45vh;   
-    width: 25vw;
-  }
-
+@media screen and (min-width: 600px) {
   .menu-opcoes{
     position: fixed;
-    top:20vh;
-    left:20vh;  
+    top:23vh;
+    left:15vh;
+    
     list-style: none;
     opacity: 0;
     transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);    
   }
 
-  
+  #menu-hamburguer:checked ~ label .menu{
+    border-radius: 0;
+      height: 50vh;    
+      width: 20vw;
+  }
+
 }
 
 @media screen and (min-width:1024px){

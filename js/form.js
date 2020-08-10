@@ -28,12 +28,15 @@ function AbreFormularioEnvioMensagem(){
 document.addEventListener("DOMContentLoaded", function(event) {
   OnScroll();
 
+  document.getElementById('menu-opcoes').addEventListener('click',() => {
+    document.getElementById('menu-hamburguer').checked = false;
+  });
 });
 
 window.onscroll = function() {OnScroll()};
 
 function OnScroll(){
-  var header = document.getElementById('myHeader');
+  /*var header = document.getElementById('myHeader');
  
   if(window.innerWidth > 991){
     if(window.pageYOffset == 0){   
@@ -45,7 +48,7 @@ function OnScroll(){
     }
   }else{
     //header.style.backgroundColor = 'black';
-  }
+  }*/
   
 }
 
