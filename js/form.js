@@ -26,11 +26,11 @@ function AbreFormularioEnvioMensagem(){
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  OnScroll();
 
   document.getElementById('menu-opcoes').addEventListener('click',() => {
     document.getElementById('menu-hamburguer').checked = false;
   });
+  
 });
 
 window.onscroll = function() {OnScroll()};
